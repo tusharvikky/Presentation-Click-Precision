@@ -1,0 +1,582 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Click Precision</title>
+    
+    <meta name="description" content="Click Precision!" />
+    <meta name="author" content="Tushar Deo" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="css/style.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+<!--
+    For example this fallback message is only visible when there is `impress-not-supported` class on body.
+-->
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b>, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+<!-- Main Presentation STARTS here. -->
+    <!-- ********************* Main Intro ************************ -->
+    <div id="title" class="step" data-x="0" data-y="150" data-scale="4">
+        <span class="try">Project on: </span>
+        <h1>Click Precision<sup>*</sup></h1>
+        <span class="footnote"><sup>*</sup>Avdhut | Henry | Kunal | Tushar | <b>Guide: Prof. VY Patil</b></span>
+    </div>
+    <!-- Slide 1 -->
+    <div class="step slide" data-x="-1000" data-y="-1700">
+        <q align="center"><strong>Mission</strong></q></br>
+       <ul>
+          <li>• Intuitive alternative to mouse and keyboard, or any difficult to learn remote controller</li></br>
+          <li>• Why use a glove? </li>
+        </ul>
+        <p><img src="img/slide1.png" width="270" height="310" align="right"/></p>
+    </div>
+    <!-- Slide 2 -->
+     <div class="step slide" data-x="0" data-y="-1700">
+        <q align="center"><strong>Glove Architecture</strong></q></br>
+        <img src="img/slide2.png" width="472" height="426" style="display: block; margin-left: auto; margin-right: auto;" />
+     </div>
+     <!-- Components -->
+    <div id="ing" class="step" data-x="5000" data-y="-850" data-rotate="270" data-scale="6">
+        <p>Our project components are <b class="positioning">Accelerometer</b>, <b class="rotating">ZIGBEE</b>, <b class="scaling">Flex Sensor</b></br> and <b class="rotating">MSP430</b> </p>
+    </div>
+
+    <!-- ********************* MSP430 **************************** -->
+    <div id="big2" class="step" data-x="12000" data-y="-4000" data-rotate="180" data-scale="6">
+        <p>Coming <b>up...</b> <span class="thoughts">next</span></p>
+    </div>
+    <div id="tiny2" class="step" data-x="12675" data-y="-4325" data-z="-3000" data-rotate="3" data-scale="1">
+        <p><b>MSP430</b></p>
+    </div>
+
+    <!-- Slide 16 -->
+    <div class="step slide" data-x="-1000" data-y="4700">
+        <q align="center"><strong>Introduction of MSP430</strong></q></br>
+        <ul>
+            <li>• The MSP430 is a mixed-signal microcontroller family from Texas Instruments.</li></br>
+            <li>• Built around a 16-bit CPU, the MSP430 is designed for low cost and, specifically, low power consumption embedded applications</li></br>
+            <li>•  The electric current drawn in idle mode can be less than 1 microamp. </li>
+        </ul>
+    </div>
+
+    <!-- Slide 17 -->
+    <div class="step slide" data-x="0" data-y="4700">
+        <q align="center"><strong>Specification of MSP430</strong></q></br>
+        <ul>
+            <li>• Used for low powered embedded devices</li></br>
+            <li>• The MSP430 does not have an external memory bus, so is limited to on-chip memory (up to 256 KB Flash memory and 16 KB RAM)</li></br>
+            <li>• it has a DMA controller, timer, 10/12/14/16-bit ADCs and many other usual peripherals</li>
+        </ul>
+
+    </div>
+
+    <!-- Slide 18 -->
+    <div class="step slide" data-x="1000" data-y="4700">
+        <q align="center"><strong>MSP430 Part Numbering</strong></q></br>
+        <img src="img/slide18.png" width="550" height="420" style="display: block; margin-left: auto; margin-right: auto;"/>
+
+    </div>
+
+    <!-- Slide 19 -->
+    <div class="step slide" data-x="2000" data-y="4700">
+        <q align="center"><strong>DECIPHERING THE SUFFIX</strong></q></br>
+        <ul>
+            <li>• MSP430F2618ATZQWT-EP</li></br>
+            <li>• MSP430: Standard prefix.</li></br>
+            <li>• F: Indicates a memory type or specialized application.</li></br>
+            <li>• 2 INDICATES The generation of device</li></br>
+            <li>• 6: The model within the generation</li></br>
+<!--             <li>• . This indicates the mixture of on-board peripheral devices and number of pins.</li>
+ -->        </ul>
+    </div>
+
+    <!-- Slide 20 -->
+    <div class="step slide" data-x="3000" data-y="4700">
+        <q align="center"><strong>DECIPHERING THE SUFFIX (Cont.)</strong></q></br>
+        <ul>
+            <li>• MSP430F2618ATZQWT-EP</li>
+            <li>• 18- One or two digits indicating the amount of memory</li>
+            <li>•  "A" -An optional suffix indicating an upward-compatible revised version</li>
+            <li>• T: Indicates a temperature range of −40°C to +105 °C.</li>
+            <li>• ZQW: Indicates the package the part is kept in. "ZQW" is a TI-specific name for a ball grid array.</li>
+            <li>• T: Indicates that the parts are shipped in small reel (7-inch) packaging.</li>
+            <li>• -EP: Indicates an additional feature. "-Q1" specifies that the part is automotive qualified. "-EP" and "-HT" indicate extended temperature products.</li>
+        </ul>
+    </div>
+
+    <!-- Slide 32 -->
+    <div class="step slide" data-x="4000" data-y="4700">
+        <q align="center"><strong>Architecture</strong></q></br>
+        <img src="img/slide32.png" width="550" height="420" style="display: block; margin-left: auto; margin-right: auto;"/>
+    </div>
+    
+    <!-- Slide 33 -->
+    <div class="step slide" data-x="5000" data-y="4700">
+        <q align="center"><strong>Address space</strong></q></br>
+        <img src="img/slide33.png" width="550" height="420" style="display: block; margin-left: auto; margin-right: auto;"/>
+    </div>
+
+    <!-- SLide 34 -->
+    <div class="step slide" data-x="6000" data-y="4700">
+        <q align="center"><strong>Flash/ROM</strong></q></br>
+        <ul>
+            <li>• The start address varies between 01100h (60k devices) to 0F800h (2k devices) and always runs to the end of the address space at location 0FFFFh.</li></br>
+            <li>• Flash can be used for both code and data. Word or byte tables can also be stored and read by the program from Flash/ROM.</li></br>
+            <li>• All code, tables, and hard-coded constants reside in this memory space.</li>
+        </ul>
+    </div>
+
+    <!-- Slide 35 -->
+    <div class="step slide" data-x="7000" data-y="4700">
+        <q align="center"><strong>RAM & SFRs</strong></q></br>
+        <ul>
+            <li>• RAM always starts at address 0200h. The end address of RAM depends on the amount of RAM present on the device. RAM is used for both code and data.</li></br>
+            <li>• Some peripheral functions are mapped into memory with special dedicated functions. The Special Function Registers (SFRs) are located at memory addresses from 0000h to 000Fh.</li></br>
+            <li>– Interrupt enables (locations 0000h and 0001h);</li>
+            <li>– Interrupt flags (locations 0002h and 0003h);</li>
+            <li>– Enable flags (locations 0004h and 0005h);</li>
+        </ul>
+    </div>
+    
+    <!-- Slide 36 -->
+    <div class="step slide" data-x="8000" data-y="4700">
+        <q align="center"><strong>Central Processing Unit</strong></q></br>
+        <ul>
+            <li>• The RISC type architecture of the CPU is based on a short instruction set (27 instructions), interconnected by a 3-stage instruction pipeline for instruction decoding.</li></br>
+            <li>• The CPU has a 16-bit ALU, four dedicated registers and twelve working registers, which makes the MSP430 a high performance microcontroller suitable for low power applications.</li></br>
+            <li>• The addition of twelve working general purpose registers saves CPU cycles by allowing the storage of frequently used values and variables instead of using RAM.</li>
+        </ul>
+    </div>
+
+
+
+    <div class="step slide" data-x="9000" data-y="4700">
+        <q align="center"><strong>INTEGRATED PERIPHERALS</strong></q></br>
+        <ul>
+<!--             <li>• Analog-to-Digital Converter (ADC)</li></br>
+ -->        <li>• Timers</li></br>
+            <li>• Watchdog (WDT)</li></br>
+            <li>• Advanced Encryption Standard (AES)</li></br>
+            <li>• Brown-Out Reset (BOR)</li></br>
+            <li>• Direct Memory Access (DMA) Controller</li></br>
+            <li>• I 2 C (Inter IC)</li>
+        </ul>
+    </div>
+
+
+
+    <!-- ******************* Accelerometer ********************** -->
+    <div id="big3" class="step" data-x="12000" data-y="-8000" data-rotate="180" data-scale="6">
+        <p>Coming <b>up...</b> <span class="thoughts">next</span></p>
+    </div>
+    <div id="tiny3" class="step" data-x="12675" data-y="-8325" data-z="-3000" data-rotate="3" data-scale="1">
+        <p><b>Accelerometer</b></p>
+    </div>
+
+    <!-- Slide 22 -->
+    <div class="step slide" data-x="-1000" data-y="5500">
+        <q align="center"><strong>Introduction of Accelerometer</strong></q></br>
+        <ul>
+            <li>• An accelerometer is a device that measures proper acceleration</li>
+            <li>• It uses the force of gravity as input vector</li>
+<!--             <li>• Its sensitive to tilt </li>
+ -->            <li>• Its most sensitive to tilt when its sensitive axis is perpendicular to the force of gravity</li>
+            <li>• Accelerometer measures all accelerations, except those accelerations due to gravity</li>
+        </ul>
+
+    </div>
+
+    <!-- Slide 23 -->
+    <div class="step slide" data-x="0" data-y="5500">
+        <q align="center"><strong>  Types of Accelerometer</strong></q></br>
+        <ul>
+            <li>• Resistive</li></br>
+            <li>• Capacitive</li></br>
+            <li>• Fiber Optic</li></br>
+            <li>• Piezoelectric</li>
+        </ul>
+    </div>
+
+    <!-- Slide 24 -->
+<!--     <div class="step slide" data-x="1000" data-y="5500">
+        <q align="center"><strong>Physical Principles (Cont.)</strong></q></br>
+        <ul>
+            <li>• SI unit metres per second per second (m/s2), in the cgs unit gal (Gal), or popularly in terms of g-force (g).</li>
+            <li>• the effects of gravity on an object are indistinguishable from acceleration</li>
+            <li>• an accelerometer will read zero during any type of free fall</li>
+        </ul>
+    </div> -->
+
+    <!-- Slide 25 -->
+<!--     <div class="step slide" data-x="2000" data-y="5500">
+        <q align="center"><strong>Common Accelerometer Types</strong></q></br>
+        <ul>
+            <li>• Resistive</li>
+            <ul><li>– Strain Gauge</li>
+                <li>– Piezoresistive</li>
+                <li>– Micromachined</li>
+                <li>– Thin-Film</li>
+            </ul>
+            <li>• Capacitive</li>
+            <li>• Fiber Optic</li>
+            <li>• Piezoelectric</li>
+        </ul>
+    </div> -->
+
+    <!-- Slide 26 -->
+    <div class="step slide" data-x="1000" data-y="5500">
+        <q align="center"><strong>Resistive Accelerometer</strong></q></br>
+        <p>• Operating Principle</p>
+        <p style="font-size:18px;">– Voltage output of resistor bridge changes proportionally with applied acceleration</p>
+        <img src="img/slide26.png" width="550" height="380" style="display: block; margin-left: auto; margin-right: auto;"/>
+    </div>
+
+    <!-- Slide 27 -->
+    <div class="step slide" data-x="2000" data-y="5500">
+        <q align="center"><strong>Capacitive Accelerometer</strong></q></br>
+        <p>• Operating Principle</p>
+        <p style="font-size:18px;">– Utilizes frequency modulation technique through varying capacitor bridge</p>
+        <img src="img/slide27.png" width="550" height="380" style="display: block; margin-left: auto; margin-right: auto;"/>
+    </div>
+
+    <!-- Slide 28 -->
+    <div class="step slide" data-x="3000" data-y="5500">
+        <q align="center"><strong>Fiber Optic Accelerometer</strong></q></br>
+        <p>• Operating Principle</p>
+        <p style="font-size:18px;">– Amount of light gathered by receivers is proportional to applied acceleration</p>
+        <img src="img/slide28.png" width="550" height="380" style="display: block; margin-left: auto; margin-right: auto;"/>
+    </div>
+
+    <!-- Slide 29 -->
+    <div class="step slide" data-x="3000" data-y="6300">
+        <q align="center"><strong>Fiber Optic Accelerometer</strong></q></br>
+        <ul>
+            <li>• Fiber Optic</li>
+            <ul>
+                <li>– Similar characteristics and applications as resistive and capacitive sensors</li>
+                <li>– Additional features</li>
+                <ul>
+                    <li>• Provision for remotely locating electronics</li>
+                    <ul><li>– High temperature operation to 1000 F (537 C)</li>
+                        <li>– Cabling is transmitting only light, which consequently eliminates the possibility of RF and EM interference in “noisy” environments</li>
+                    </ul>
+                </ul>
+            </ul>
+        </ul>
+    </div>
+
+    <!-- Slide 30 -->
+    <div class="step slide" data-x="2000" data-y="6300">
+        <q align="center"><strong>Piezoelectric Accelerometer</strong></q></br>
+        <p>• Operating Principle</p>
+        <p style="font-size:18px;">– Force on self-generating crystal provides charge output proportional to acceleration</p>
+        <img src="img/slide30.png" width="550" height="380" style="display: block; margin-left: auto; margin-right: auto;"/>
+    </div>
+
+    <!-- Slide 31 -->
+    <div class="step slide" data-x="1000" data-y="6300">
+        <q align="center"><strong>Piezoelectric Effect</strong></q></br>
+        <ul>
+<!--             <li>• Piezoelectric Effect</li>
+ -->        <ul><li>– Word origin comes from the greek work “piezen” which translates “to squeeze”.</li>
+                <li>– The generation of an electrical signal by a dielectric material as it is subjected to a mechanical stress.</li>
+            </ul>
+        </ul>
+    </div>
+
+    <!-- Slide 32 -->
+    <div class="step slide" data-x="0" data-y="6300">
+        <q align="center"><strong>Piezoelectric Materials</strong></q></br>
+        <ul>
+            <li>• Piezoelectric Materials</li>
+            <ul>
+                <li>– Naturally Piezoelectric</li>
+                <ul><li>• Rochelle Salt</li>
+                    <li>– One of first materials used to make sensors</li>
+                </ul>
+                <ul><li>• Tourmaline</li>
+                    <li>– Sensitive to hydrostatic pressure</li>
+                </ul>
+                <ul><li>• Exotic, “Man-Made” Materials</li>
+                    <li>– Langasite</li>
+                    <li>– Lithium Niobate</li>
+                </ul>
+                <li>• Cultured Quartz</li>
+            </ul>
+        </ul>
+    </div>
+
+    <!-- Slide 33 -->
+    <div class="step slide" data-x="-1000" data-y="6300">
+        <q align="center"><strong>APPLICATIONS</strong></q></br>
+        <ul>
+            <li>• Engineering – to measure vehicle acceleration</li>
+            <li>– Vibration on cars, machines, buildings, process control systems and safety installations</li>
+            <li>• Biologically its used for high frequency recordings of bi-axial or tri-axial acceleration (>10 Hz) which allows the discrimination of behavioral patterns while animals are out of sight.</li>
+            <li>• In Industries vibration in machines allows the user to monitor machines by comparing it with the previous steady state  data and detect these faults before the rotating equipment fails completely</li>
+            
+        </ul>
+    </div>
+
+    <!-- Slide 34 -->
+<!--     <div class="step slide" data-x="-1000" data-y="7100">
+        <q align="center"><strong>APPLICATIONS</strong></q></br>
+        <ul>
+            <li>• Biology</li>
+            <li>– High frequency recordings of bi-axial or tri-axial acceleration (>10 Hz) allows the discrimination of behavioral patterns while animals are out of sight</li>
+            <li>– the rate at which an animal is expending energy in the wild, by either determination of limb-stroke frequency or measures such as overall dynamic body acceleration</li>
+        </ul>
+    </div> -->
+
+    <!-- Slide 35 -->
+    <!-- <div class="step slide" data-x="0" data-y="7100">
+        <q align="center"><strong>APPLICATIONS</strong></q></br>
+        <ul>
+            <li>• Industry</li>
+            <li>– Accelerometer vibration data allows the user to monitor machines and detect these faults before the rotating equipment fails completely</li>
+            <li>– condition monitoring</li>
+            <li>– improve safety in plants</li>
+        </ul>
+    </div> -->
+
+
+    
+
+
+    <!-- ************************** Zigbee ********************** -->
+    <div id="big1" class="step" data-x="12000" data-y="-2000" data-rotate="180" data-scale="6">
+        <p>Coming <b>up...</b> <span class="thoughts">next</span></p>
+    </div>
+    <div id="tiny1" class="step" data-x="12675" data-y="-2325" data-z="-3000" data-rotate="3" data-scale="1">
+        <p><b>Zigbee</b></p>
+    </div>
+    <!-- Slide 7 -->
+    <div class="step slide" data-x="-1000" data-y="3100">
+        <q align="center"><strong>What exactly is Zigbee?</strong></q></br>
+        <ul>
+            <li>• ZigBee is a <b>wireless mesh network</b> TECHNOLOGY WHICH PROVIDES low-cost, low-power.</li>
+            <li>• Based on an <b>IEEE 802.15.4 standard</b> for <b>personal area networks</b>.</li>
+            <li>• Targeted at applications that require a low data rate, long battery life, and secure networking.</li>
+            <li>• Has a defined rate of 250 kbit/s.</li>
+            <li>• The ZigBee specification is intended to be simpler and less expensive than other <b>WPANs</b>, such as <b>Bluetooth</b>.</li>
+        </ul>
+    </div>
+    <!-- Slide 8 -->
+    <div class="step slide" data-x="0" data-y="3100">
+        <q align="center"><strong>History of Zigbee</strong></q></br>
+        <ul>
+            <li>• The name refers to the <b>waggle dance</b> of honey bees WHICH THEY USE to communicate important information to her hive members.</li>
+            <li>• ZigBee-style networks began to be conceived around 1998.</li>
+            <li>• The IEEE 802.15.4-2003 standard was completed in May 2003.</li>
+            <li>• Philips Semiconductors AND ZIGBEE ALLIANCE a major mesh network supporter.</li>
+        </ul>
+    </div>
+    <!-- Slide 9 -->
+    <div class="step slide" data-x="1000" data-y="3100">
+        <q align="center"><strong>History of Zigbee (cont.)</strong></q></br>
+        <ul>
+            <li>• The first stack release is now called ZigBee 2004.</li></br>
+            <li>• The second stack release is called ZigBee 2006.</li></br>
+            <li>• now the current stack release, ZigBee 2007.</li></br>
+            <li>• contains two stack profiles, stack profile 1 (simply called ZigBee).</li></br>
+            <li>• stack profile 2 (called ZigBee PRO).</li>
+        </ul>
+    </div>
+    <!-- Slide 10 -->
+    <div class="step slide" data-x="2000" data-y="3100">
+        <q align="center"><strong>Characteristics of Zigbee</strong></q></br>
+        <ul>
+            <li>• Three license-free bands: 2.4-2.4835 GHz, 868-870 MHz and 902-928 MHz.</li>
+            <li>• At 2.4 GHZ, there are a total of 16 channels available with a maximum data transfer of 250 kbps.</li>
+            <li>• At 915 MHz: 10 channels for a max 40 kbps transfer rate.</li>
+            <li>• At 868 MHz: 1 channel for a max 20 kbps transfer rate.</li>
+            <li>• Maximum data rates allowed for each of these frequency bands are fixed.</li>
+            <li>• Range: 10 to 100m.</li>
+            <li>• Low power consumption.</li>
+            <li>• Multiple topologies : star, peer-to-peer, mesh topologies.</li>
+        </ul>
+    </div>
+    <!-- Slide 11 -->
+    <div class="step slide" data-x="3000" data-y="3100">
+        <q align="center"><strong>Star Topologies</strong></q></br>
+        <p>
+        <img src="img/slide11-1.png" width="550" height="420" style="display: block; margin-left: auto; margin-right: auto;"/></p>
+    </div>
+    <!-- Slide 12 -->
+    <div class="step slide" data-x="4000" data-y="3100">
+        <q align="center"><strong>Peer-to-Peer Topologies</strong></q></br>
+        <p>
+        <img src="img/slide11-2.png" width="550" height="420" style="display: block; margin-left: auto; margin-right: auto;"/></p>
+    </div>
+    <!-- Slide 13 -->
+    <div class="step slide" data-x="4000" data-y="3900">
+        <q align="center"><strong>Mesh Topologies</strong></q></br>
+        <p>
+        <img src="img/slide11-3.png" width="550" height="420" style="display: block; margin-left: auto; margin-right: auto;"/></p>
+    </div>
+    <!-- Slide 14 -->
+    <div class="step slide" data-x="3000" data-y="3900">
+        <q align="center"><strong>Application of Zigbee</strong></q></br>
+        <ul>
+            <li>• Wireless Sensor Networks</li>
+            <li>• Industrial control</li>
+            <li>• Embedded sensing</li>
+            <li>• Medical data collection</li>
+            <li>• Smoke and intruder warning</li>
+            <li>• Building automation</li>
+            <li>• Home Entertainment and Control</li>
+        </ul>
+    </div>
+    <!-- Slide 15 -->
+    <div class="step slide" data-x="2000" data-y="3900">
+        <q align="center"><strong>Comparision of Zigbee</strong></q></br>
+        <ul>
+            <li>• both have their distinct spaces in the networking spectrum</li></br>
+            <li>• ZigBee is better for short packet oriented</li></br>
+            <li>• accessible range MORE</li></br>
+            <li>• LOW power consumption</li>
+        </ul>
+    </div>
+
+
+
+    <!-- *********************** Flex Sensor ********************* -->
+    <div id="big" class="step" data-x="12000" data-y="2100" data-rotate="180" data-scale="6">
+        <p>Coming <b>up...</b> <span class="thoughts">next</span></p>
+    </div>
+    <div id="tiny" class="step" data-x="12675" data-y="2325" data-z="-3000" data-rotate="3" data-scale="1">
+        <p><b>Flex Sensor</b></p>
+    </div>
+
+
+    <!-- Slide 3 -->
+    <div class="step slide" data-x="-1000" data-y="2300">
+        <q align="center"><strong>Flex Sensor</strong></q></br>
+        <p>
+            <ul>
+            <li>• <b>Flex Sensor</b> is a unique component that changes resistance when <b>bent or flexed</b>.</li>
+            <li>• An un flexed sensor has a nominal resistance of approximately <b>10,000 ohms (10 K)</b>.</li>
+            </ul>
+            <table width="791" border="1">
+              <tr>
+                <td width="387"><img src="img/slide3-1.png" width="199" height="287" align="left"/></td>
+                <td width="388"><img src="img/slide3-2.png" width="199" height="287" align="right"/></td>
+              </tr>
+            </table>
+        </p>
+    </div>
+    <!-- Slide 4 -->
+    <div class="step slide" data-x="0" data-y="2300">
+        <q align="center"><strong>Types of Flex Sensor</strong></q>
+        <p>
+            <ul>
+                <li>• <b>One-Directional Flex Sensors</b></li>
+                <ul><li>– the smaller the radius of the bent, the higher the resistance value.</li></ul></br>
+                <li>• <b>Two-Directional Bi-Flex Sensors</b></li>
+                <ul><li>– As the flex sensor is bent in either direction the resistance gradually decreases.</li></ul>
+            </ul>
+            <table width="791" border="1">
+              <tr>
+                <th width="387"><p><img src="img/slide4-1.png" width="345" height="100" /></p>
+                <p><strong style="font-size:24px;">One-Directional  Flex Sensors</strong></p></th>
+                <th width="388"><p><img src="img/slide4-2.png" width="329" height="160" /></p>
+                <p><strong style="font-size:24px;">Two-Directional Bi-Flex Sensors</strong></p></th>
+              </tr>
+            </table>
+        </p>
+    </div>
+    <!-- Slide 5 -->
+    <div class="step slide" data-x="1000" data-y="2300">
+        <q align="center"><strong>Working of Flex Sensor</strong></q></br>
+        <div style="font-size:24px;">• Flex sensors are analog resistors</br>
+        <b>Basic Circuit:</b> Flex Sensor as Voltage Divider - Output voltage increases with the bend.</br>
+            <ul>
+            <li>– As the resistance of the bend sensor reduces (as a result of bending it into a convex shape) the voltage on Ain will go up towards 5V.</li>
+            <li>– If the resistance of the bend sensor increases (as a result of bending it in the opposite direction) the voltage on Ain will fall towards Gnd (0V).</li>
+            </ul>
+            <img src="img/slide5.png" width="291" height="163" style="display: block; margin-left: auto;"/>          
+        </div>
+    </div>
+    <!-- Slide 6 -->
+    <div class="step slide" data-x="2000" data-y="2300">
+        <q align="center"><strong>Application of Flex Sensor</strong></q></br>
+        <ul>
+            <li>– Collision detection on mobile robots.</li>
+            <li>– VR Gloves and VR suits.</li>
+            <li>– Automotive controls.</li>
+            <li>– Medical devices.</li>
+            <li>– Industrial controls.</li>
+            <li>– Computer peripherals.</li>
+            <li>– Fitness products.</li>
+            <li>– Musical instruments.</li>
+            <li>– Measuring devices.</li>
+            <li>– Virtual reality games.</li>
+            <li>– Physical therapy.</li>
+        </ul>
+    </div>
+
+    
+    
+
+    
+    <!-- Done -->
+    <!-- <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
+        <p>We are done...</p>
+    </div> -->
+    <!-- oops -->
+    <!-- <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+        <p><span class="have">oops..</span> <span class="you">Sorry!</span> <span class="noticed">Just</span> <span class="its">2 More</span> <span class="in">slides</span> <b>about our project</b>!</p>
+    </div> -->
+    <!-- *********************** Reference ************************ -->
+    <div class="step slide" data-x="6000" data-y="5500">
+        <q align="center"><strong>References</strong></q></br>
+        <ul>
+            <li>• Idea: IEEE Paper: <b>"A Survey of Glove-based Input"</b></li>
+            <ul><li>– Author: <b>David J. Sturman (Medialab)</b> & <b>David Zeltzer (MIT Research Lab of Electronics)</b></li>
+                <li>– Published: <b>1994</b></li></br>
+            </ul>
+            <li>• Flex Sensor: http://itp.nyu.edu/physcomp/sensors/Reports/Flex</li></br>
+            <li>• MSP430: Texas Instruments: http://www.ti.com/lit/sg/slab034v/slab034v.pdf</li>
+        </ul>
+    </div>
+
+    <!-- ************************ Queries ************************ -->
+    <div id="source" class="step" data-x="7300" data-y="2000" data-rotate="20" data-scale="4">
+        <p>Any queries?</p>
+        <q>Thank You, People!</q>
+        <iframe width="600" height="350" src="http://www.youtube.com/embed/TfMm_7B9QCo" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <!-- Overview always at the END! -->
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+
+</div>
+
+<!-- <div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div> -->
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>
